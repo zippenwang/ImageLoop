@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <!--<android.support.v4.view.ViewPager-->
+            <!--android:id="@+id/vp_news"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="200dp" />-->
+        <wzp.demo.imageloop.widget.ImageLoopViewPager
+            android:id="@+id/vp_news"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <wzp.demo.showimagebyturnsdemo.PageIndicatorView
+            android:id="@+id/pageIndicatorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            app:piv_selectedColor="#000000"
+            app:piv_unselectedColor="#eeeeee"
+            app:piv_radius="4dp"
+            app:piv_padding="10dp"
+            app:piv_animationType="worm"
+            app:piv_interactiveAnimation="false"
+            app:dynamicCount="true"
+            app:piv_viewPager="@id/vp_news" />
+    </RelativeLayout>
+
+</RelativeLayout>
