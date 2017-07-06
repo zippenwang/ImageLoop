@@ -1,1 +1,2 @@
 # ImageLoop
+基于ViewPager和PageIndicator的轮播图功能封装
